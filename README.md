@@ -18,15 +18,15 @@ $ sudo pacman -S python-virtualenv
 ```
 $ pip install Flask
 ```
-8. Run ```$ gedit toxic-env/bin/activate``` to edit it. At the end of the file you have to define some environment variables used by Flask.
+5. Run ```$ gedit toxic-env/bin/activate``` to edit it. At the end of the file you have to define some environment variables used by Flask.
 ```
 export FLASK_APP="run_detoxify_server.py"
 export FLASK_ENV="development"
 # Set the port you want to use in the server, or delete the next line if you want to use the default port
 export FLASK_RUN_PORT=8000
 ```
-9. Run again ```$ source toxic-env/bin/activate``` to apply the changes in step 8.
-10. Run the Flask server.
+6. Run again ```$ source toxic-env/bin/activate``` to apply the changes in step 5.
+7. Run the Flask server.
 ```
 $ flask run
 ```
